@@ -54,12 +54,12 @@ word_list9 = [ "smoothie", "coffee", "juice", "martini",  "kombucha" ]
 word_list10 = [ "eleventh", "seventh", "ground", "forty-fourth",  "twentieth" ]
 word_list11 = [ "second", "third", "fourth", "fifth",  "sixth" ]
 word_list12 = [ "grinning", "sympathetic", "sneering", "unbothered",  "innocent" ]
-word_list14 = [ "fuming.", "seething.", "furious.", "livid.",  "at a boiling point." ]
-word_list15 = [ "salami sandwich", "pad thai", "quiche", "baked potato",  "lasagna" ]
-word_list16 = [ "eat it.", "chuck it out the window.",
+word_list13 = [ "fuming.", "seething.", "furious.", "livid.",  "at a boiling point." ]
+word_list14 = [ "salami sandwich", "pad thai", "quiche", "baked potato",  "lasagna" ]
+word_list15 = [ "eat it.", "chuck it out the window.",
                 "open the bag and pour the contents of the lunch into Eve’s bag.",
                 "throw it on the ground.",  "toss it in the trash." ]
-word_list17 = [ "glared at Eve as he walked back towards his desk.", "stormed out the office.",
+word_list16 = [ "glared at Eve as he walked back towards his desk.", "stormed out the office.",
                 "walked back to his desk sulking.", "flipped Eve off and went back to work.",
                 "kicked Eve’s desk and hurt his foot." ]
 
@@ -93,15 +93,61 @@ word8 = word_list7[ random_number ]
 
 string_template6 = "Eve ended up killing the attacker in self-defense. Eve was about to be late to work, there was no time to bring this up to the police."
 
-string_template7 = "When Eve finally got to work, the new intern, {}, who offered them a {}."
+string_template7 = "When Eve finally got to work, the new intern, {}, offered them a {}. Eve was suspicious of them and bluntly declined."
 random_number = random.randrange( len(word_list8) )
 word9 = word_list8[ random_number ]
 random_number = random.randrange( len(word_list9) )
 word10 = word_list9[ random_number ]
 
+string_template8 = "Eve walked to the elevator. When the elevator finally got to the lobby, Eve told the automated elevator attendant to press the button for the {} floor."
+random_number = random.randrange( len(word_list10) )
+word11 = word_list10[ random_number ]
+
+string_template9 = "After reaching the floor of their office, Eve plopped down in their chair. Their job was to protect the local automatons from being attacked by any viruses. Recently, there has been an influx of attacks from space pirates in the neighboring planets trying to take control over them."
+
+string_template10 = "All Eve had to do was press a couple of buttons in the right order repeatedly. Instead, Eve watched cat videos for several hours. During their {} hour session of watching videos, they heard the boss coming. The boss was fuming with anger. They glared at Eve and said, ..."
+random_number = random.randrange( len(word_list11) )
+word12 = word_list11[ random_number ]
+
+string_template11 = "Eve! We've lost a hundred units from this sector to the pirates today. What the hell have you been doing the entire day?! Eve looked at the boss with an innocent face and said, Sir, I've tried to protect as many units as I could. I think there's someone in this office who hasn't been pulling their weight."
+
+string_template12 = "Eve motioned their eyes towards Jimmy, who was across the office glancing down at his phone at the worst time imaginable. The boss yelled at the top of his lungs. Jimmy ended up getting a strike for his 'poor' performance and Eve resumed to their videos after the boss left the sector."
+
+string_template13 = "Jimmy walked over to confront Eve. Eve looked at him with a {} look on their face."
+random_number = random.randrange( len(word_list12) )
+word13 = word_list12[ random_number ]
+
+string_template14 = "You are literally the worst co-worker I have ever had worked with, Jimmy said. He was {}"
+random_number = random.randrange( len(word_list13) )
+word14 = word_list13[ random_number ]
+
+string_template15 = "How do you sleep at night? Jimmy asked. On my stomach with the fan on high. Eve responded."
+
+string_template16 = "Jimmy looked like he was about to cry. People crying made Eve uncomfortable."
+
+string_template17 = "Hey, this won't happen again. Here, have this {}, I made it this morning. Eve handed over their lunch bag to Jimmy."
+random_number = random.randrange( len(word_list14) )
+word15 = word_list14[ random_number ]
+
+string_template18 = "Gee, thanks. That really fixes everything for me. How do I know if you poisoned this or not? Jimmy interrogated. Well no one told you that you have to eat it. Eve answered nonchalantly."
+
+string_template19 = "Jimmy decided to {}. I am glad you enjoyed it. Eve said."
+random_number = random.randrange( len(word_list15) )
+word16 = word_list15[ random_number ]
+
+string_template20 = "Jimmy decided to {}. I am glad you enjoyed it. Eve said."
+random_number = random.randrange( len(word_list16) )
+word17 = word_list16[ random_number ]
+
+string_template21 = "The alarm in the sector started blaring loudly and flashing red suddenly. It was the signal to change shifts, and Eve went home."
+
+
 phrase_list = [ string_template.format(word1,word2), string_template1.format(word3),
 string_template2.format(word4,word5), string_template3.format(word6), string_template4.format(word7),
-string_template5.format(word8), string_template6, string_template7.format(word9,word10) ]
+string_template5.format(word8), string_template6, string_template7.format(word9,word10),
+string_template8.format(word11), string_template9, string_template10.format(word12), string_template11, string_template12,
+string_template13.format(word13), string_template14.format(word14), string_template15, string_template16, string_template17.format(word15), string_template18,
+string_template19.format(word16), string_template20.format(word17), string_template21 ]
 
 message = phrase_list[random_number]
 
